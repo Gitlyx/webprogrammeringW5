@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Oppgave 3</title>
+    <script src="sandbox.js"></script>
 </head>
-<body>
-$END$
+<body style="display: flex; flex-wrap: wrap;">
+
+
+<div id="oppgaveEn" style="display: grid; width:300px; border: 1px solid black; padding:50px">
+    <h1>Age Analyzer</h1> <br/>
+    <table>
+        <tr>
+            <td type="text" id="outputOppgaveEn"><br/></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" id="name"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Age
+            </td>
+            <td><input type="number" id="age"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="analyze()">Analyze</button>
+                <button type="button" onclick="clearAnalyze()">clear</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="oppgaveTo" style="display: grid; width:300px; border: 1px solid black; padding:50px">
+    <h1>Farenheit calculator</h1> <br/>
+    <table>
+        <td type="text" id="outputFarenheit"><br></td>
+    </table>
+    <table>
+        <tr>
+            <td>Input degrees (F)</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="farenheit"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button" onclick="calculateFarenheit()">Calculate</button>
+                <button type="button" onclick="clearCalculateFarenheit()">clear</button>
+            </td>
+    </table>
+</div>
+<div id="oppgaveTre" style="display: grid; width:300px; border: 1px solid black; padding:50px">
+    <h1>Age Analyzer</h1> <br/>
+    <table>
+        <tr>
+            <td type="text" id="outputOppgaveTre"><br/></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>First digit</td>
+            <td>
+                <input type="text" id="calculatorDigitOne"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Second Digit
+            </td>
+            <td><input type="number" id="calculatorDigitTwo"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="calculatePlus()">+</button>
+                <button type="button" onclick="calculateMinus()">-</button>
+                <button type="button" onclick="calculateMultiplication()">x</button>
+                <button type="button" onclick="calculateDivision()">/</button>
+                <button type="button" onclick="clearCalculation()">Clear</button>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
 </body>
 </html>
